@@ -1,0 +1,89 @@
+#需要获取的字段
+fields = {
+        'backUrl': '',
+        'orderIds': None,
+        'fieldlabel': 'uq122',
+        'map-name[1]':'库存SKU',
+        'map-uq[1]':'uq101',
+        'map-text[1]': '',
+        'map-name[2]':'库存SKU中文名称',
+        'map-uq[2]':'uq103',
+        'map-text[2]': '',
+        'map-name[3]':'状态',
+        'map-uq[3]':'uq105',
+        'map-text[3]': '',
+        'map-name[4]':'商品父目录',
+        'map-uq[4]':'uq111',
+        'map-text[4]': '',
+        'map-name[5]':'商品子目录',
+        'map-uq[5]':'uq112',
+        'map-text[5]': '',
+        'map-name[6]':'库存总量',
+        'map-uq[6]':'uq119',
+        'map-text[6]': '',
+        'map-name[7]':'未发货',
+        'map-uq[7]':'uq120',
+        'map-text[7]': '',
+        'map-name[8]':'在途总量',
+        'map-uq[8]':'uq121',
+        'map-text[8]': '',
+        'map-name[9]':'销量(7/28/42)',
+        'map-uq[9]':'uq122',
+        'map-text[9]': '',
+        'templateName': '',
+        'templateId': '0',
+        'datasOpen': '1',
+        'memcacheKey': None,
+        'pageSave': '1',
+        'operateType': '3',
+        'params': '',
+        'InterfaceUrl': '',
+        'tableBase': '',
+        'isMerage': '1'
+}
+
+#请求头信息
+common_headers = {
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Proxy-Connection': 'keep-alive',
+        'Host': 'www.mabangerp.com',
+        'Origin': 'http://www.mabangerp.com',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+        'X-Requested-With': 'XMLHttpRequest'
+}
+
+#url  集合
+urls = {
+        'doLogin': 'http://www.mabangerp.com/index.php?mod=main.doLogin',
+        'getStockAllList' : 'http://www.mabangerp.com/index.php?mod=export.getStockAllList',
+        'doStockExportFile' : 'http://www.mabangerp.com/index.php?mod=export.doStockExportFile'
+}
+
+user = {
+    'username': 'xxxxxx',
+    'password': 'xxxxxxxxxxxx'
+}
+
+# excel 列 映射 数据库字段
+field_map = {
+        '库存SKU中文名称':'product_name',
+        '库存SKU':'sku',
+        '库存总量':'stock_count',
+        '在途总量':'on_stock_count',
+        '未发货':'undelivered',
+        '商品父目录':'category_name',
+        '商品子目录':'sub_category_name',
+        '状态':'status',
+        '销量(7/28/42)':'sales_volume'
+}
+
+db = {
+        'DB_HOST':'192.168.1.251',
+        'DB_USER':'test',
+        'DB_PORT':3306,
+        'DB_PWD':'test121',
+        'DB_NAME':'dispute'
+}
